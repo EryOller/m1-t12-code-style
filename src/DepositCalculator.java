@@ -24,10 +24,11 @@ public class DepositCalculator {
         int period;
         int typeOfDeposit;
         double income = 0;
-
+        int amount;
         Scanner input = new Scanner(System.in);
+
         System.out.println("Введите сумму вклада в рублях:");
-        int amount = input.nextInt();
+        amount = input.nextInt();
         System.out.println("Введите срок вклада в годах:");
         period = input.nextInt( );
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
