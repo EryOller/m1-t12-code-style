@@ -1,7 +1,16 @@
 import java.util.Scanner;
 
 public class DepositCalculator {
+/* все круто, переменные логично названы, единственное что смущает количество "пробелов"
+* переменные дальше чем основной код
+* public void method1() {
+      int firstOperand = 10;
+      int secondOperand = 20;
 
+    int total = firstOperand * secondOperand;
+}
+*
+* */
     double calculateComplexPercent(double amount, double yearRate, int depositPeriod) {
         double income = amount * Math.pow((1 + yearRate / 12), 12 * depositPeriod);
 
@@ -24,6 +33,8 @@ public class DepositCalculator {
         int period;
         int typeOfDeposit;
         double income = 0;
+/* глядя на твой код, я понял что мы сделали одну и ту же ошибку
+* надо наверное было переменную amount обьявить со всеми вместе, а потом уже им присваивать значение*/
 
         Scanner input = new Scanner(System.in);
         System.out.println("Введите сумму вклада в рублях:");
